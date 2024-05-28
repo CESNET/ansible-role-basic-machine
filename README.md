@@ -2,12 +2,12 @@
 Ansible role for basic common setup of machines.
 
 It just imports the following roles:
-- [cesnet.work_env](../cesnet.work_env/README.md)
-- [cesnet.ntp](../cesnet.ntp/README.md)
-- [cesnet.metacentrum_monitoring](../cesnet.metacentrum_monitoring/README.md)
-- [cesnet.unattended-upgrades](../cesnet.unattended_upgrades/README.md)
-- [cesnet.yubikeys](../cesnet.yubikeys/README.md)
-- [cesnet.firewall](../cesnet.firewall/README.md)
+- [cesnet.work_env](https://github.com/CESNET/ansible-role-work-env/)
+- [cesnet.ntp](https://github.com/CESNET/ansible-role-ntp/)
+- [cesnet.metacentrum_monitoring](https://github.com/CESNET/ansible-role-metacentrum-monitoring/)
+- [cesnet.unattended-upgrades](https://github.com/CESNET/ansible-role-unattended-upgrades/)
+- [cesnet.yubikeys](https://github.com/CESNET/ansible-role-yubikeys/)
+- [cesnet.firewall](https://github.com/CESNET/ansible-role-firewall/)
 
 Role Variables
 --------------
