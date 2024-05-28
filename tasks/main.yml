@@ -1,0 +1,29 @@
+- name: "check that variables root_email_address is defined"
+  assert:
+    that:
+      - root_email_address is defined
+    msg: "Define variable root_email_address !"
+
+- name: "set up working environment in shells"
+  import_role:
+    name: cesnet.work_env
+
+- name: "set up NTP - system time synchronization"
+  import_role:
+    name: cesnet.ntp
+
+- name: "set up monitoring by MetaCentrum's Nagios"
+  import_role:
+    name: cesnet.metacentrum_monitoring
+
+- name: "set up unattended upgrades"
+  import_role:
+    name: "cesnet.unattended_upgrades"
+
+- name: "set up Yubikeys"
+  import_role:
+    name: cesnet.yubikeys
+
+- name: "set up firewall"
+  import_role:
+    name: cesnet.firewall
